@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* project desc page */
+
+/* scroll */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.project_list{position: relative;}
+
+.project_list .main_img{
+    height: 40vh;
+    width: 100%;
+    background: url(/_img/desc/ski_x1_bg.jpg) center no-repeat;
+    background-size: cover;
+}
+.inner_cont{
+}
+.inner_cont .flex_img{
+    display: flex;
+    top: -10vh;
+    position: relative;
+
+
+}
+.inner_cont .flex_img .text_line{
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+.inner_cont .main_text{
+    width: 100%;
+    /* top: -50%; */
+
+}
+
+.inner_cont .main_text img{
+    top: -1vh;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 30vw;
+    position: absolute;
+}
+
+.inner_cont .desc_item1{
+    color: #ccc;
+    font-size: 18px;
+    margin: 5vh 15vw;
+}
+.inner_cont .desc_item1 p{
+    text-align: center;
+}
+
+.inner_cont .desc_item1 .spec_menu{
+    display: flex;
+    margin-top: 5vh;
+    width: 100%;
+    justify-content: space-around;
+    padding-block: 3vh;
+    border-block: 1px solid #eaeaea;
+
+}
+.inner_cont .desc_item1 .spec_menu .item_name1{
+    padding-right: 2vw;
+    border-right: 1px solid #949494;
+
+}
+
+.inner_cont .desc_item1 .spec_menu .item_name1 a{
+    font-weight: bold;
+    color: #949494;
+}
+
+.inner_cont .desc_item1 .spec_menu a{
+    color: #ccc;
+}
+.inner_cont .spec_title{
+    display: flex;
+    margin: 10vh 15vw;
+    justify-content: space-between;
+}
+.inner_cont .title_text{
+    color: #ccc;
+    text-transform: capitalize;
+    font-size: 27px;
+    letter-spacing: 10px;
+    font-weight: bold;
+
+}
+.inner_cont .title_line{
+    border-bottom: 1px solid #ccc;
+    width: 60%;
+}
+
+
+.inner_cont .spec_detail{
+    margin: 0 15vw ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inner_cont .spec_detail .r_img{
+    width:38vw;
+}
+.inner_cont .spec_detail .r_img img{
+    width: 100%;
+}
+
+.inner_cont .spec_detail .l_desc{
+    /* background-color: #949494; */
+    padding: 50px;
+}
+
+.inner_cont .spec_detail .l_desc tr,td{
+    padding: 13px;
+    font-size: 15px;
+    letter-spacing: 0;
+
+}
+.inner_cont .spec_detail .l_desc tr,td{
+    color: #ccc;
+}
+
+.inner_cont .spec_detail .l_desc .td_name{
+    background-color: #5d5d5d;
+    width: 20vw;
+}
+
+.inner_cont .rectang{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5vh 20vw 0;
+
+}
+
+.inner_cont .rectang a{
+    position: relative;
+    width: 25%;
+    padding: 5px;
+
+}
+
+.inner_cont .rectang a img{
+    display: block;
+    width: 100%;
+}
+
+
+
