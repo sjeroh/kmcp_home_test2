@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/****************************************/
+/* Name: DESIGN WAVE (WAVELABS)
+/* PART: MAIN STYLE
+/* Version: 1.0
+/* Author: Kim Bo Reum
+/****************************************/
+
+
+
+/*메인비주얼*/
+.mainVisual_slider {overflow:hidden; width:100%; height:100vh; position:relative; z-index:9; backface-visibility:hidden;}
+.mainVisual_slider .swiper-slide {background-size: cover; background-repeat: no-repeat; background-position: center;}
+.mainVisual_slider .swiper-slide.mv1 {background-image: url("../_img/main/main_visual01.jpg");}
+.mainVisual_slider .swiper-slide.mv2 {background-image: url("../_img/main/main_visual02.jpg");}
+.mainVisual_slider .swiper-slide.mv3 {background-image: url("../_img/main/main_visual03.jpg");}
+.mainVisual_slider .swiper-slide.mv4 {background-image: url("../_img/main/main_visual04.jpg");}
+.mainVisual_slider .swiper-slide.mv5 {background-image: url("../_img/main/main_visual05.jpg");}
+.mainVisual_slider-pagination { margin-top: 80px;}
+.mainVisual_slider-pagination span {background: #fff; margin: 0 15px !important; position: relative; width: 5px; height: 5px; opacity: 0.5}
+.mainVisual_slider-pagination span::after {width: 24px; height:24px; border: 1px solid #fff; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%); content: ''; border-radius: 100%; display: none;}
+.mainVisual_slider-pagination span.swiper-pagination-bullet-active {opacity: 1;}
+.mainVisual_slider-pagination span.swiper-pagination-bullet-active::after {display: block;}
+.mainVisual_slider-button {position: absolute; top:50%; left: 50%; transform: translate(0,-50%); z-index: 1; cursor: pointer; transition: 0.3s;}
+
+#main_visual_video {width: 100%; height:100vh; position:relative; background: #000;}
+#main_visual_video video {opacity: 0.6; width: 100%; height:100%; object-fit: cover}
+
+
+.visual_text {position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1;}
+.visual_text h2 {color: #fff; font-weight: 700; margin-bottom: 20px;}
+.visual_text p {color: #fff; font-size: 22px; opacity: 0.8; line-height: 1.45;}
+
+/*바로가기링크*/
+.main__banner_list {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.main__banner_list .banner {position: relative; width:33.3%; height: 400px; box-sizing: border-box;  background-position: center; background-size: cover; background-repeat: no-repeat; padding: 50px 40px;}
+.main__banner_list .banner p {font-size: 35px; font-weight: 600; line-height: 1.45; color: #fff;}
+.main__banner_list .banner p span {position: absolute; bottom: 20px; right: 20px; transition: 0.3s; width: 50px; height: 50px; background: #151a1d; text-align: center;}
+.main__banner_list .banner p span i {color: #0988ce; font-size: 30px; font-weight: 100;}
+
+.main__banner_list .banner .cover {position: absolute; bottom: 0; right: 0; width: 0; height: 0; overflow: hidden; background: #007dc6; opacity: 0.8; z-index: 2;  transition: 0.3s; visibility: hidden}
+.main__banner_list .banner .cover a {text-align: center; color: #fff; font-size: 18px; font-weight: 500; visibility: hidden; transition: 0.1s;}
+.main__banner_list .banner .cover a i {font-size: 25px; }
+.main__banner_list .banner:hover .cover {width: 100%; height: 100%; visibility: visible;}
+.main__banner_list .banner:hover .cover a {visibility: visible;}
+.main__banner_list .banner:hover span {opacity: 0}
+
+
+.main__banner_list .banner#business_bg-1 {background-image: url('../_img/main/main_business_img1.jpg?ver=221123');}
+.main__banner_list .banner#business_bg-2 {background-image: url('../_img/main/main_business_img2.jpg?ver=221123');}
+.main__banner_list .banner#business_bg-3 {background-image: url('../_img/main/main_business_img3.jpg?ver=221123');}
+.main__banner_list .banner#business_bg-4 {background-image: url('../_img/main/main_business_img4.jpg?ver=221123');}
+.main__banner_list .banner#business_bg-5 {background-image: url('../_img/main/main_business_img5.jpg?ver=221123');}
+.main__banner_list .banner#business_bg-6 {background-image: url('../_img/main/main_business_img6.jpg?ver=221123');}
+
+
+
+@media all and (max-width:980px){
+    .visual_text {padding-bottom: 50px;}
+    .visual_text p {font-size: 18px;}
+    .visual_text .vertical_midAlign-inner {vertical-align:bottom}
+    
+    .main__banner_list .banner {width:50%; height: 300px; padding: 30px;}
+    .main__banner_list .banner p {font-size: 25px;}
+    .main__banner_list .banner p span {line-height: 60px;}
+}
+
+@media all and (max-width:640px){
+    .main__banner_list .banner {padding: 20px;}
+    .main__banner_list .banner p span {width:40px; height: 40px; line-height: 40px; bottom: 15px; right: 15px;}
+    .main__banner_list .banner p span i {font-size: 25px;}
+}
+
+@media all and (max-width:480px){
+    .main__banner_list .banner {width: 100%; height: 250px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+

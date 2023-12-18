@@ -1,0 +1,357 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+    
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>KMCP::한국컴포짓</title>
+<link rel="stylesheet" href="http://www.kmcpyachts.com/css/default.css?ver=210618">
+<link rel="stylesheet" href="http://www.kmcpyachts.com/js/font-awesome/css/font-awesome.min.css?ver=210618">
+<link href="/_css/base.css?ver=221123" type="text/css" rel="stylesheet">
+<link href="/_css/style.css?ver=221123" type="text/css" rel="stylesheet">
+<link href="/_css/webfont.css?ver=221123" type="text/css" rel="stylesheet">
+<link href="/_css/contents.css?ver=221123" type="text/css" rel="stylesheet">
+<link href="/_css/main.css?ver=221123" type="text/css" rel="stylesheet">
+<link href="/_css/sub.css?ver=230221" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<link href="/_js/aos/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<!--[if lte IE 8]>
+<script src="http://www.kmcpyachts.com/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://www.kmcpyachts.com";
+var g5_bbs_url   = "http://www.kmcpyachts.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+var g5_shop_url = "http://www.kmcpyachts.com/shop";
+</script>
+<script src="http://www.kmcpyachts.com/js/jquery-1.12.4.min.js?ver=210618"></script>
+<script src="http://www.kmcpyachts.com/js/jquery-migrate-1.4.1.min.js?ver=210618"></script>
+<script src="http://www.kmcpyachts.com/js/jquery.menu.js?ver=210618"></script>
+<script src="http://www.kmcpyachts.com/js/common.js?ver=210618"></script>
+<script src="http://www.kmcpyachts.com/js/wrest.js?ver=210618"></script>
+<script src="http://www.kmcpyachts.com/js/placeholders.min.js?ver=210618"></script>
+<script src="/_js/jquery-ui.min.js"></script>
+<script src="/_js/navigation/navigation.js"></script>
+</head>
+<body>
+
+
+
+
+<div id="kmcp-wrapper">
+        <div id="kmcp-header">
+            <div class="header__inner">
+                <h1 class="logo"><a href="/">로고</a></h1>      
+
+                <ul id="kmcp__gnb">
+                    <li><a href="/wave/01/01">ABOUT</a></li>
+                    <li><a href="/wave/02/01">TECHNOLOGY</a>
+                        <div class="gnb-dep2">
+                            <ul class="gnb-2dep">
+                                <li><a href="/wave/02/01">Autonomous</a></li>
+                                <li><a href="/wave/02/02">Fuel Cell</a></li>
+                                <li><a href="/wave/02/03">Hydrofoil</a></li>
+                                <li><a href="/wave/02/04">Design Critical Analysis</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/wave/03/01">PROJECT</a>
+                        <div class="gnb-dep2">
+                            <ul class="gnb-2dep">
+                                <li><a href="/wave/03/03">Hydrofoil</a></li>
+                                <li><a href="/wave/03/02">Autonomous</a></li>                                
+                                <li><a href="/wave/03/01">Hydrogen Leisure Fishing Boat</a></li>
+                                <li><a href="/wave/03/04">Defense</a></li>
+                                <li><a href="/wave/03/05">Pleasure</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/wave/04/01">TEAM</a>
+                        <div class="gnb-dep2">
+                            <ul class="gnb-2dep">
+                                <li><a href="/wave/04/01">Ship design/ Structural Analysis/ CFD</a></li>
+                                <li><a href="/wave/04/02">Marine electrical, electronic and control system</a></li>
+                                <li><a href="/wave/04/04">Marine exterior and interior design</a></li>
+                                <li><a href="/wave/04/05">Boatbuilding</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/wave/05/00">MEDIA</a>
+                        <div class="gnb-dep2">
+                            <ul class="gnb-2dep">
+                            <li><a href="/wave/05/00">Event</a></li>
+                                <li><a href="/wave/05/00">Press</a></li>
+                                <!--<li><a href="/wave/05/01">Event</a></li>
+                                <li><a href="/wave/05/02">Press</a></li>-->
+                            </ul>
+                        </div>
+                    </li>                
+                    <li><a href="/wave/06/01">CONTACT</a></li>               
+                </ul>
+                
+                <div class="sns_link">
+                    <a href="#"><i class="xi-instagram"></i></a>
+                    <a href="#"><i class="xi-youtube-play"></i></a>
+                </div>
+
+                <div class="all_menu">
+                    <div class="sm_btn" onclick="sitemapToggle()">
+                        <span class="bar bar01"></span>
+                        <span class="bar bar02"></span>
+                        <span class="bar bar03"></span>
+                    </div>
+                </div>
+
+                <!-- 전체메뉴 -->
+                <nav id="gnbM">
+                    <div class="menu_close"><i class="xi-close"></i></div>
+                    <ul class="utility_list">
+                        <li><a href="#"><i class="xi-instagram"></i></a></li>
+                        <li><a href="#"><i class="xi-youtube-play"></i></a></li>
+                    </ul>
+
+                    <div id="gnbNavigation">
+                        <ul class="clearfix">
+                            <li class="gnb1"><a href="/wave/01/01"><span>ABOUT</span></a></li>
+                            <li class="gnb2 has-child"><a href="#"><span>TECHNOLOGY</span></a>
+                                <ul class="gnb-2dep">
+                                    <li><a href="/wave/02/01">Autonomous</a></li>
+                                    <li><a href="/wave/02/02">Fuel Cell</a></li>
+                                    <li><a href="/wave/02/03">Hydrofoil</a></li>
+                                    <li><a href="/wave/02/04">Design Critical Analysis</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb3 has-child"><a href="#"><span>PROJECT</span></a>
+                                <ul class="gnb-2dep">
+                                    <li><a href="/wave/03/03">Hydrofoil</a></li>
+                                    <li><a href="/wave/03/02">Autonomous</a></li>                                
+                                    <li><a href="/wave/03/01">Hydrogen Leisure Fishing Boat</a></li>
+                                    <li><a href="/wave/03/04">Defense</a></li>
+                                    <li><a href="/wave/03/05">Pleasure</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb4 has-child"><a href="#"><span>TEAM</span></a>
+                                <ul class="gnb-2dep">
+                                    <li><a href="/wave/04/01">Ship design/ Structural Analysis/ CFD</a></li>
+                                    <li><a href="/wave/04/02">Marine electrical, electronic and control system</a></li>
+                                    <li><a href="/wave/04/04">Marine exterior and interior design</a></li>
+                                    <li><a href="/wave/04/05">Boatbuilding</a></li>
+                                </ul>
+                            </li>    
+                            <li class="gnb5"><a href="#">MEDIA</a>
+                                <ul class="gnb-2dep">
+                                    <li><a href="/wave/05/00">Event</a></li>
+                                    <li><a href="/wave/05/00">Press</a></li>
+                                </ul>
+                            </li>                
+                            <li class="gnb6"><a href="/wave/06/01">CONTACT</a></li>                
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- //header -->
+    
+        <div id="kmcp-contents">
+                   
+		
+        
+            <div class="sub_menu" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                <div class="inner_cont">
+                    <h3>Project</h3>
+                    
+                    <ul>
+                        <li class=""><a href="/wave/03/03">Hydrofoil</a></li>
+                        <li class=""><a href="/wave/03/02">Autonomous</a></li>
+                        <li class="on"><a href="/wave/03/01">Hydrogen Leisure Fishing Boat</a></li>
+                        <li class=""><a href="/wave/03/04">Defense</a></li>
+                        <li class=""><a href="/wave/03/05">Pleasure</a></li>
+                    </ul>
+                                        <div class="project_slider-controler">
+                        <div class="project_slider-fraction"></div>
+                        <div class="project_slider-btns project_slider-prev"></div> 
+                        <div class="project_slider-btns project_slider-next"></div> 
+                    </div>
+                                    </div>
+            </div>
+ 			
+
+             
+            <div id="product_video">
+                <div class="project_slider">
+                    <div class="swiper-wrapper">
+												<div class="swiper-slide">
+							<div class="ytbg" data-youtube="https://youtu.be/rlJD1qK6cWs"></div>
+						</div>
+												
+                       
+                    </div>
+                </div>
+            </div>							
+
+        </div>
+        <!-- //container -->
+        
+        <div id="kmcp-footer">
+            <div class="inner_cont">
+                <p>Copyright ⓒ2023 KMCP.CO.KR. All RIGHT RESERVED.</p>
+            </div>
+        </div>
+    </div>
+    <!-- //wrapper -->
+	<script>
+		jQuery(function () {		
+			//GNB
+			$('#kmcp__gnb>li').mouseenter(function(e) {
+				$(this).addClass('on');
+				$(this).find('.gnb-dep2').addClass('on');
+				$('#kmcp-header').addClass('on');
+			}).mouseleave(function(e) {
+				$(this).removeClass('on');
+				$('#kmcp-header').removeClass('on');
+				$('.gnb-dep2').removeClass('on');
+			});
+            
+            //스크롤이벤트
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 300) {
+                    $("#kmcp-header").addClass("scroll");
+                    $(".top_btn").addClass('on');
+                    $("#quick_menu").addClass('on');
+                } else {
+                    $("#kmcp-header").removeClass("scroll");
+                    $(".top_btn").removeClass('on');
+                    $("#quick_menu").removeClass('on');
+                }
+            });
+        
+		});
+
+		//전체메뉴햄버거버튼
+		function sitemapToggle(){
+			$('.sm_btn').toggleClass('on');            
+		};
+	</script>
+	<!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        
+        
+        // 메인비주얼
+        var swiper = new Swiper('.mainVisual_slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            speed: 1500,
+            autoplay: {
+                delay: 20000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".mainVisual_slider-pagination",
+                clickable: true,
+            },
+            navigation: {
+              nextEl: ".mainVisual_slider-next",
+              prevEl: ".mainVisual_slider-prev",
+                clickable: true,
+            },
+        });	
+        
+        
+        // 프로젝트비주얼
+        var swiper = new Swiper('.project_slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            speed: 1500,
+            autoplay:false,
+            pagination: {
+                el: '.project_slider-fraction',
+				type: "fraction",
+                clickable: true,
+             },
+            navigation: {
+                nextEl: '.project_slider-next',
+                prevEl: '.project_slider-prev',
+            },
+        });
+        
+        // 프로젝트비주얼
+        var swiper = new Swiper('.media_slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            speed: 1500,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.media_slider-next',
+                prevEl: '.media_slider-prev',
+            },
+        });
+    </script>
+	
+	<!-- AOS -->
+	<script src="/_js/aos/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+    
+    <!-- YOUTUBE BACKGROUND -->
+    <script type="text/javascript" src="/_js/youtube_bg.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            $('[data-youtube], [data-vbg]').youtube_background({ 
+            'mobile' : true,
+            'fit-box' : true,
+			'load-background' : false
+			
+            });
+        });
+    </script>
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+</body>
+</html>
